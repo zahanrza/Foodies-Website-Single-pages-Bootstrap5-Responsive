@@ -1,0 +1,328 @@
+
+  @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap');
+
+*,
+*:after,
+*:before{
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+:active,
+:hover,
+:focus{
+	outline: 0!important;
+	outline-offset: 0;
+}
+
+a,
+a:hover{
+	text-decoration: none;
+}
+a:hover {
+  color: var(--primary-color) !important;
+}
+
+ul{
+	padding: 0;
+	margin: 0;
+}
+
+:root{
+  --primary-color:#f5c332;
+  --secondary-color:#231E41;
+  --white-color: #fff;
+  --black-color: #000;
+
+  --text-primary:#f5c332;
+  --text-secondary:#231E41;
+  --text-white: #fff;
+  --text-color: #555;
+  --text-gray: #999;
+
+  --primary-font:'Roboto', sans-serif;
+}
+
+html{
+	scroll-behavior: smooth;
+}
+::-webkit-scrollbar{
+	width: 0.425rem;
+}
+::-webkit-scrollbar-track{
+	background: var(--white-color);
+}
+::-webkit-scrollbar-thumb{
+	background: var(--primary-color);
+}
+body{
+	font-family: var(--primary-font);
+	font-size: 100%;
+	font-weight: 400;
+}
+
+h1{
+	font-size: 3.125rem;
+	font-weight: 900;
+	margin-bottom: 3rem;
+	color: var(--text-secondary);
+	text-transform: capitalize;
+}
+
+h2{
+	font-size: 2.25rem;
+	font-weight: 700;
+	line-height: 3rem;
+	color: var(--text-secondary);
+	text-transform: capitalize;
+}
+
+h4{
+	font-size: 1.125rem;
+	font-weight: 800;
+	margin-bottom: 0.5rem;
+	color: var(--text-secondary);
+	text-transform: capitalize;
+}
+
+
+p{
+	font-size: 1rem;
+	font-weight: 400;
+	line-height: 1.75rem;
+	letter-spacing: .0625rem;
+	color: var(--text-color);
+}
+
+.main-btn{
+	font-size: 0.9375rem;
+	font-weight: 600;
+	text-transform: capitalize;
+	color: var(--black-color);
+	background-color: var(--primary-color);
+	border: 0.1875rem solid var(--primary-color);
+	padding: 0.625rem 1.875rem;
+	line-height: 1.5625rem;
+	display: inline-block;
+	box-shadow: 0.125rem .625rem -0.0625rem rgb(0, 0, 0, / 19%);
+	transition: all 0.4s ease-out 0s;
+	-webkit-transition: all 0.4s ease-out 0s;
+}
+.main-btn:hover{
+	background: transparent;
+	color: var(--text-primary);
+}
+
+.wrapper{
+	padding-top: 6.25rem;
+	padding-bottom: 6.25rem;
+}
+.text-content{
+	width: 70%;
+	margin: 0 auto;
+}
+.counter-section h2,
+.testimonial-section h2,
+.book-food-text h2{
+	color: var(--text-primary);
+}
+
+.navigation-wrap.scroll-on{
+	position: fixed;
+	width: 100%;
+	left: 0;
+	background: var(--white-color);
+	z-index: 999;
+	transition: all 0.3s ease-in-out;
+	-webkit-transition: all 0.3s ease-in-out;
+}
+.navigation-wrap .navbar-brand img{
+	width: 13rem;
+}
+
+.navigation-wrap .nav-item{
+	padding: 0 0.625rem;
+	transition: all 200ms linear;
+}
+
+.navigation-wrap .nav-link{
+	font-size: 1rem;
+	font-weight: 600;
+	text-transform: capitalize;
+	color: var(--text-secondary);
+	letter-spacing: .0625rem;
+}
+
+.navigation-wrap .navbar-toggler:focus{
+	outline: none;
+	border: unset;
+	box-shadow: none;
+}
+
+.navigation-wrap .main-btn{
+	padding: 0.3125rem 1.4375rem;
+	box-shadow: none;
+	margin-left: 0.625rem;
+}
+.top-banner{
+	width: 100%;
+	background: url(../images/bg/bg-1.jpg) no-repeat center;
+	background-size: cover;
+	padding: 14.875rem 0 9.375rem;
+}
+
+.counter-section{
+	background: var(--black-color);
+	padding: 2.5rem 0;
+}
+.counter-section p{
+	color: var(--text-white);
+	text-transform: capitalize;
+	margin-bottom: 0;
+}
+
+/*About Section*/
+.food-type{
+	padding-top: 3.25rem;
+}
+.food-type ul li{
+	font-size: 1rem;
+	color: var(--text-color);
+	line-height: 2rem;
+	position: relative;
+	margin-left: 1.875rem;
+}
+.food-type ul li:before{
+	position: absolute;
+	left: -2.1875rem;
+	color: var(--text-primary);
+	font-size: 1.25rem;
+	font-family: "Font Awesome 5 Free";
+	content: '\f00c';
+	display: inline-block;
+	font-weight: 900;
+}
+
+.story-section{
+	width: 100%;
+	height: 28.125rem;
+	background: url(../images/bg/bg-2.jpg) no-repeat center center;
+	background-size: cover;
+	padding-top: 6.25rem;
+	text-align: center;
+}
+
+.explore-food .card{
+	background: transparent;
+	border-radius: 0.9375rem;
+	border: .125rem dashed var(--primary-color);
+}
+.explore-food .card img{
+	border-radius: 0.9375rem 0.9375rem 0 0;
+	object-fit: cover;
+}
+.explore-food .card span{
+	display: block;
+	font-size: 1.5rem;
+	font-weight: 700;
+	color: var(--text-primary);
+	padding-bottom: 1rem;
+	border-bottom: 0.0625rem solid var(--primary-color);
+}
+.explore-food .card span del{
+	color: var(--text-gray);
+	margin-left: 0.5rem;
+}
+
+.testimonial-section{
+	background: url(../images/bg/bg-4.jpg) no-repeat center center;
+	background-size: cover;
+}
+
+.testimonial-section .carousel-item{
+	margin-top: 3rem;
+	padding: 10rem 3.125rem;
+	background: var(--white-color);
+	border-radius: 0.9375rem;
+	text-align: center;
+}
+
+.testimonial-section .carousel-item img{
+	max-width: 5rem;
+	border-radius: 50%;
+	border: .125rem solid var(--primary-color);
+	padding: .3125rem;
+}
+.testimonial-section .carousel-item .carousel-caption p{
+	font-size: 1.3125rem;
+	line-height: 2.0625rem;
+	padding: 0.625rem 11%;
+}
+.testimonial-section .carousel-indicators{
+	bottom: -4.9125rem;
+}
+.testimonial-section .carousel-indicators button{
+	width: .9375rem;
+	height: .9375rem;
+	border-radius: 50%;
+}
+.team .card{
+	background: var(--black-color);
+	border: .25rem solid var(--primary-color);
+	border-radius: 0.625rem;
+	text-align: center;
+}
+.team .card img{
+	border-radius: 0.625rem 0.625rrem 0 0;
+
+}
+.team h4{
+	color: var(--text-primary);
+	text-transform: uppercase;
+}
+.team h6,
+.team p{
+	color: var(--text-white);
+}
+.team .social-icon i{
+	font-size: 1.125rem;
+	transition: all .3s ease;
+	margin: .3125rem;
+	background: var(--text-primary);
+	color: var(--text-white);
+	border-radius: 50%;
+	width: 2.1875rem;
+	height: 2.1875rem;
+	line-height: 2.1875rem;
+}
+.team .social-icon i:hover{
+	background: var(--white-color);
+	color: var(--text-primary);
+}
+.book-food{
+	width: 100%;
+	background: url(../images/bg/bg-3.jpg) no-repeat 0 4.44945rem;
+	background-size: cover;
+	background-attachment: fixed;
+	padding: 4.375rem 0;
+
+}
+.download-app{
+	width: 100%;
+	background: url(../images/bg/bg-5.jpg) no-repeat center center;
+	background-size: cover;
+}
+.footer{
+	background: var(--black-color);
+
+}
+.footer .footer-link{
+	font-size: 1rem;
+	color: var(--text-white);
+	padding: 0 1.875rem;
+}
+.footer a{
+	font-size: 1.5rem;
+	color: var(--text-white);
+	padding: 0 1rem;
+}
